@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav ul {
+    list-style: none;
+}
+
+.sidebar .nav li {
+    margin: 10px 0;
+}
+
+.sidebar .nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.placeholder {
+    margin: 20px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+    color: #555;
+}
+
+.contact {
+    font-size: 0.9em;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons div {
+    cursor: pointer;
+}
+
+.latest-deals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.latest {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.rank {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.rank ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.rank li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.todays-deals h2 {
+    margin-bottom: 20px;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.deal {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.deal img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Existing CSS code... */
+
+.products-section {
+    padding: 20px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.item-details {
+    padding: 10px;
+}
+
+.item-details h3 {
+    margin: 10px 0 5px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    background-color: #3b82f6;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #2563eb;
+}
+
+.cart-section {
+    padding: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+}
+
+.remove-item {
+    background-color: #ff4b5c;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #ff1e3a;
+}
+
+.cart-total {
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #3b82f6;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #2563eb;
+}
